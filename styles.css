@@ -327,12 +327,26 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px; /* Réduire le padding pour les mobiles */
+    }
+}
+
 section h2 {
     color: var(--common-accent-color);
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.6em; /* Un peu plus petit pour les petits écrans */
+    }
+}
+
 section p, section ul {
     font-size: 1.1em;
     color: #555;
