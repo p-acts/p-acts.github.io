@@ -33,6 +33,7 @@ function setupSeminarDateToggle() {
 }
 
 // Function to load header and footer content
+
 async function loadContent() {
     const wrapper = document.querySelector('.wrapper');
 
@@ -69,11 +70,10 @@ async function loadContent() {
         console.error('Error loading content:', error);
     }
 }
-
 // Combine all DOMContentLoaded functions
 document.addEventListener('DOMContentLoaded', () => {
+    loadContent();
     highlightCurrentPage();
     setupSeminarDateToggle();
-    loadContent();
 });
 
