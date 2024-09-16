@@ -1,0 +1,343 @@
+/* Common Variables */
+:root {
+    --common-accent-color: #009688; /* Teal color */
+    --person-link-color: #6A5ACD; /* Teal for persons' links */
+    --person-link-hover-color: #004D40; /* Darker teal for hover */
+}
+
+
+/* General Page Style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+
+}
+.wrapper {
+    flex:1;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes up full viewport height */
+}
+
+
+/* Header */
+header {
+    background-color: var(--common-accent-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+header h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #e0f2f1; /* Light teal */
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    margin: 0 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--common-accent-color);
+    padding-bottom: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: var(--person-link-hover-color);
+}
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: var(--person-link-hover-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff; /* Active link color */
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+section h2 {
+    color: var(--common-accent-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p, section ul {
+    font-size: 1.1em;
+    color: #555;
+}
+ul {
+    padding-left: 20px;
+    list-style: square;
+}
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: var(--common-accent-color);
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    background-color: var(--common-accent-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Footer Logos */
+.footer-logos {
+    margin-top: 10px;
+}
+
+.footer-logos a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-logos img {
+    height: 40px; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+/* General Section Style */
+#committee, #members {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 30px auto; /* Uniform margin */
+    background-color: white; /* Consistent background color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consistent box shadow */
+    border-radius: 10px; /* Consistent border radius */
+}
+
+/* Specific Style for h2 in Sections */
+#committee h2, #members h2 {
+    color: var(--common-accent-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+/* Committees and Organizers */
+.committee {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items */
+}
+
+.committee li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Link Styling */
+.committee li a {
+    text-decoration: none;
+    color: var(--person-link-color);
+    font-weight: bold;
+}
+
+.committee li a:hover {
+    text-decoration: underline;
+    color: var(--person-link-hover-color);
+}
+
+
+/* Local Information Page Styles */
+#local-info {
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#local-info h2 {
+    color: var(--common-accent-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#local-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--common-accent-color);
+}
+#local-info p, #local-info ul {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#local-info a {
+    text-decoration: none;
+    color: var(--person-link-color);
+    font-weight: bold;
+}
+/* Members Page */
+#members {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white; /* Consistent background color */
+}
+#members ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    justify-items: start;
+    box-sizing: border-box;
+}
+#members li {
+    margin: 0;
+    text-align: left;
+}
+#members a {
+    text-decoration: none;
+    color: var(--person-link-color);
+    font-weight: bold;
+}
+#members a:hover {
+    text-decoration: underline;
+    color: var(--person-link-hover-color);
+}
+
+
+/* Schedule Page Styles */
+.seminar-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.seminar-item h3 {
+    font-size: 1.5em;
+    color: var(--common-accent-color);
+}
+
+.seminar-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Adjust main content to avoid overlap with fixed sidebar */
+#upcoming-seminars, #past-seminars {
+    margin-left: 270px; /* Ensure space for the fixed sidebar */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seminar-item {
+        padding: 15px;
+    }
+}
+
+/* Styling for seminar date headers */
+.seminar-date {
+    cursor: pointer;
+    color: var(--common-accent-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.seminar-date:hover {
+    color: var(--person-link-hover-color);
+}
+
+/* Styling for seminar details */
+.seminar-date {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.seminar-date::before {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.seminar-item .seminar-details {
+    display: none; /* Initially hidden */
+}
+
+.seminar-details p {
+    margin-left: 20px;
+}
+
+
