@@ -32,47 +32,9 @@ function setupSeminarDateToggle() {
     });
 }
 
-// Function to load header and footer content
 
-async function loadContent() {
-    const wrapper = document.querySelector('.wrapper');
-
-    try {
-        // Fetch header.html and footer.html
-        const [headerResponse, footerResponse] = await Promise.all([
-            fetch('header.html'),
-            fetch('footer.html')
-        ]);
-
-        if (!headerResponse.ok || !footerResponse.ok) {
-            throw new Error('Failed to fetch HTML files');
-        }
-
-        // Get the text content of each response
-        const headerHTML = await headerResponse.text();
-        const footerHTML = await footerResponse.text();
-
-        // Create elements for header and footer
-        const headerElement = document.createElement('div');
-        const footerElement = document.createElement('div');
-
-        // Set their innerHTML
-        headerElement.innerHTML = headerHTML;
-        footerElement.innerHTML = footerHTML;
-
-        // Insert header as the first child
-        wrapper.insertBefore(headerElement, wrapper.firstChild);
-
-        // Insert footer as the last child
-        wrapper.appendChild(footerElement);
-
-    } catch (error) {
-        console.error('Error loading content:', error);
-    }
-}
 // Combine all DOMContentLoaded functions
 document.addEventListener('DOMContentLoaded', () => {
-    loadContent();
     highlightCurrentPage();
     setupSeminarDateToggle();
 });
