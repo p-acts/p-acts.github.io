@@ -83,7 +83,7 @@ nav a:hover::after {
 
 .nav-link.active {
     font-weight: bold;
-    color: #007bff; /* Active link color */
+    color: var(--common-accent-color); /* Active link color */
 }
 
 ul {
