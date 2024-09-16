@@ -86,25 +86,6 @@ nav a:hover::after {
     color: #007bff; /* Active link color */
 }
 
-/* Section Styles */
-section {
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 1200px;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-section h2 {
-    color: var(--common-accent-color);
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-section p, section ul {
-    font-size: 1.1em;
-    color: #555;
-}
 ul {
     padding-left: 20px;
     list-style: square;
@@ -294,10 +275,6 @@ footer p {
     color: #555;
 }
 
-/* Adjust main content to avoid overlap with fixed sidebar */
-#upcoming-seminars, #past-seminars {
-    margin-left: 270px; /* Ensure space for the fixed sidebar */
-}
 
 
 /* Responsive Design */
@@ -341,3 +318,22 @@ footer p {
 }
 
 
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+section h2 {
+    color: var(--common-accent-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p, section ul {
+    font-size: 1.1em;
+    color: #555;
+}
