@@ -22,28 +22,51 @@ function highlightCurrentPage() {
 
 
 // Function to handle seminar date toggling
-function setupSeminarDateToggle() {
-    const seminarDates = document.querySelectorAll('.seminar-date');
-    seminarDates.forEach(date => {
-        date.innerHTML = '► ' + date.innerHTML;
+function setupAbstractToggle() {
+    document.querySelectorAll('.toggle-abstract').forEach(toggle => {
+        const abstractContent = toggle.nextElementSibling; // Select the <p class="abstract-content">
+        const fullAbstract = abstractContent.querySelector('.full-abstract'); // Select the full abstract
+        const firstLine = abstractContent.querySelector('.abstract-first-line'); // Select the first line
 
-        date.addEventListener('click', () => {
-            const details = date.nextElementSibling;
-            if (details.style.display === 'block') {
-                details.style.display = 'none';
-                date.innerHTML = date.innerHTML.replace('▼', '►');
+        // Extract words from the full abstract
+        const fullText = fullAbstract.textContent.trim();
+        const words = fullText.split(' ');
+        fullAbstract.style.display = 'block'; // Temporarily show the full abstract
+        maxWordsInLine = 35
+        fullAbstract.style.display = 'none'; // Hide it again
+
+        // Ensure at least one word is displayed if possible
+        if (maxWordsInLine > 0) {
+            firstLine.textContent = words.slice(0, maxWordsInLine).join(' ') + (words.length > maxWordsInLine ? '...' : '');
+        } else {
+            firstLine.textContent = ''; // Set to empty if no words can fit
+        }
+
+        // Set initial display states
+        fullAbstract.style.display = 'none'; // Ensure full abstract is hidden
+        firstLine.style.display = 'inline'; // Show first line
+
+        // Toggle functionality for displaying the full abstract
+        toggle.addEventListener('click', () => {
+            if (fullAbstract.style.display === 'none') {
+                fullAbstract.style.display = 'inline'; // Show full abstract
+                firstLine.style.display = 'none'; // Hide first line
+                toggle.innerHTML = toggle.innerHTML.replace('►', '▼'); // Change to down arrow
             } else {
-                details.style.display = 'block';
-                date.innerHTML = date.innerHTML.replace('►', '▼');
+                fullAbstract.style.display = 'none'; // Hide full abstract
+                firstLine.style.display = 'inline'; // Show first line
+                toggle.innerHTML = toggle.innerHTML.replace('▼', '►'); // Change back to right arrow
             }
         });
     });
 }
 
 
+
+
 // Combine all DOMContentLoaded functions
 document.addEventListener('DOMContentLoaded', () => {
     highlightCurrentPage();
-    setupSeminarDateToggle();
+    setupAbstractToggle();
 });
 

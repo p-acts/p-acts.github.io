@@ -286,31 +286,45 @@ footer p {
 
 /* Styling for seminar date headers */
 .seminar-date {
-    cursor: pointer;
     color: var(--common-accent-color);
     font-weight: bold;
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
-.seminar-date:hover {
-    color: var(--person-link-hover-color);
-}
-
-/* Styling for seminar details */
-.seminar-date {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
 
 .seminar-date::before {
     margin-right: 8px;
     transition: transform 0.3s ease;
 }
 
-.seminar-item .seminar-details {
-    display: none; /* Initially hidden */
+#past-seminars.abstract-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: baseline; /* Align items along the baseline */}
+
+.abstract-content {
+    display: inline; /* Ensure the paragraph behaves like an inline element */
+}
+
+
+.full-abstract, .abstract-first-line {
+    display: inline; /* Keep the first line inline */
+}
+
+.toggle-abstract {
+    cursor: pointer; /* Change cursor to pointer for toggle element */
+}
+
+.toggle-abstract {
+    cursor: pointer; /* Change cursor to pointer for toggle element */
+    color: var(--common-accent-color); /* Set the same color as the titles */
+    font-weight: bold; /* Make it bold like the titles */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.toggle-abstract:hover {
+    color: var(--person-link-hover-color); /* Change to hover color */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .seminar-details p {

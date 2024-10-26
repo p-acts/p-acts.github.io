@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule - Paris ACTS</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Paris Automata and Concurrency Theory Seminar</h1>
-      <h2>(Paris ACTS)</h2>
+        <h1>Paris Automata and Concurrency Theory Seminar</h1>
+        <h2>(Paris ACTS)</h2>
     </header>
     
     <nav>
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="seminars.html" class="nav-link">Seminars</a>
-      <a href="committee.html" class="nav-link">Committees</a>
-      <!-- <a href="members.html" class="nav-link">Members</a> -->
-      <a href="local-info.html" class="nav-link active">Local Information</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="seminars.html" class="nav-link">Seminars</a>
+        <a href="committee.html" class="nav-link">Committees</a>
+        <a href="local-info.html" class="nav-link active">Local Information</a>
     </nav>
-    <div class="wrapper">
-      <main>
+    
+    <main>
         <section id="upcoming-seminars">
-          <h2>Upcoming Seminars</h2>
-          <div class="seminar-item">
-            <h3>26 November 2024</h3>
-            <div class="upseminar-details">
-              <p><strong>Venue:</strong> LIX, École polytechnique</p>
-              <p><strong>Speaker 1:</strong> TBA</p>
-              <p><strong>Title:</strong> TBA</p>                
-              <p><strong>Speaker 2:</strong> Masaki Waga, Kyoto University, Japan
-              <p><strong>Title:</strong> Active Learning of Deterministic Timed Automata with Myhill-Nerode Style Characterization</p>
-            </div>
-          </div>
-        </section>
-	
-        <section id="past-seminars">
-          <h2>Past Seminars</h2>
-          
-          <div class="seminar-list">
-            <div class="seminar-item">
-              <h3>10 October 2024</h3>
-              <div class="upseminar-details">
-                <p><strong>Venue:</strong> LRE, EPITA Paris</p>
-                <p><strong>Speaker 1:</strong> Uli Fahrenberg, EPITA</p>
-                <p><strong>Title:</strong> Introduction</p>                
-                <p><strong>Speaker 2:</strong> Ian Hayes, University of Queensland, Brisbane, Australia</p>
-                <p><strong>Title:</strong> Concurrent Refinement Algebra</p>
-              </div>
-            </div>
-          </div>
+            <h2>Upcoming Seminars</h2>
+            <article class="seminar-item">
+                <h3 class="seminar-date">26 November 2024</h3>
+                <p><strong>Venue:</strong> LIX, École polytechnique</p>
+                <p><strong>Speaker 1:</strong> TBA</p>
+                <p><strong>Title:</strong> TBA</p>
+                <p><strong>Speaker 2:</strong> Masaki Waga, Kyoto University, Japan</p>
+                <p><strong>Title:</strong> Active Learning of Deterministic Timed Automata with Myhill-Nerode Style Characterization</p>                                
+                <p class="abstract-content">
+                    We present an algorithm to learn a deterministic timed automaton (DTA) via membership 
+                    and equivalence queries. Our algorithm is an extension of the L* algorithm with a 
+                    Myhill-Nerode style characterization of recognizable timed languages, which is the 
+                    class of timed languages recognizable by DTAs. We first characterize the recognizable 
+                    timed languages with a Nerode-style congruence. Using it, we give an algorithm with a 
+                    smart teacher answering symbolic membership queries in addition to membership and 
+                    equivalence queries. With a symbolic membership query, one can ask the membership of a 
+                    certain set of timed words at one time. We prove that for any recognizable timed 
+                    language, our learning algorithm returns a DTA recognizing it. We show how to answer a 
+                    symbolic membership query with finitely many membership queries. We also show that our 
+                    learning algorithm requires a polynomial number of queries with a smart teacher and an 
+                    exponential number of queries with a normal teacher. We applied our algorithm to various 
+                    benchmarks and confirmed its effectiveness with a normal teacher.
+                </p>
+            </article>
         </section>
         
-      </main>        
-      <script src="script.js"></script>
-    </div>
-    <footer>
-      <p>&copy; 2024 Paris Automata and Concurrency Theory Seminar (Paris ACTS)</p>
-      <div class="footer-logos">
-        <a href="https://www.irif.fr/">
-          <img src="irif-logo.png" alt="IRIF Logo">
-        </a>
-        <a href="https://www.lix.polytechnique.fr/">
-          <img src="lix-logo.png" alt="LIX Logo">
-        </a>
-        <a href="https://www.lre.epita.fr/">
-          <img src="lre-logo.png" alt="LRE Logo">
-        </a>
-      </div>
-    </footer>
+        <section id="past-seminars">
+            <h2>Past Seminars</h2>
+            <article class="seminar-item">
+                <h3 class="seminar-date">10 October 2024</h3>
+                <p><strong>Venue:</strong> LRE, EPITA Paris</p>
+                <p><strong>Speaker 1:</strong> Uli Fahrenberg, EPITA</p>
+                <p><strong>Title:</strong> Introduction</p>
+                
+                <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+                <p class="abstract-content">
+                  <span class="abstract-first-line">                   
+                  </span> 
+                  <span class="full-abstract" style="display:none;">
+                    I will give an introduction to the purpose of the Paris ACTS seminar series and to the intersection between 
+                    automata and concurrency theory at which it is situated. I will  finish by introducing a notion of specification theories that we developed some years 
+                    ago and which is related to the refinement calculus of the second speaker.
+                  </span>
+                </p>
+
+                <p><strong>Speaker 2:</strong> Ian Hayes, University of Queensland, Brisbane, Australia</p>
+                <p><strong>Title:</strong> Concurrent Refinement Algebra</p>
+
+                <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+                <p class="abstract-content">
+                  <span class="abstract-first-line">                  
+                  </span>
+                  <span class="full-abstract" style="display:none;">
+                    Our goal is to develop a refinement calculus for shared-memory concurrent programs that 
+                    supports Jones-style rely/guarantee  developments. Our semantics is based on Aczel traces, 
+                    which explicitly include environment transitions as well as program transitions, and were 
+                    originally proposed as a basis for showing the rely/guarantee rules of Jones are sound. 
+                    Our approach has been to develop a hierarchy of algebraic theories that provide a foundation 
+                    for concurrent program refinement. Our algebraic theory is based on a lattice of commands 
+                    that includes a sub-lattice of test commands (similar to Kozen's Kleene Algebra with Tests) 
+                    and a sub-algebra of atomic commands (similar to Milner's SCCS but with a richer structure 
+                    that supports Aczel's program and environment transitions). Rely and guarantee conditions 
+                    are encoded as commands within the theory, and refinement laws for deriving concurrent 
+                    programs from rely/guarantee specifications can be proven within the theory.
+                  </span>
+                </p>
+            </article>
+        </section>
+        
+    </main>        
     
-  </body>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Paris Automata and Concurrency Theory Seminar (Paris ACTS)</p>
+        <div class="footer-logos">
+            <a href="https://www.irif.fr/">
+                <img src="irif-logo.png" alt="IRIF Logo">
+            </a>
+            <a href="https://www.lix.polytechnique.fr/">
+                <img src="lix-logo.png" alt="LIX Logo">
+            </a>
+            <a href="https://www.lre.epita.fr/">
+                <img src="lre-logo.png" alt="LRE Logo">
+            </a>
+        </div>
+    </footer>
+</body>
 </html>
