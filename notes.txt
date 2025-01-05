@@ -17,3 +17,4 @@
 # Potential invitees
 
 - Pascal Weil
+- Eugene Asarin
