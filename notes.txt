@@ -18,3 +18,5 @@
 
 - Pascal Weil
 - Eugene Asarin
+- Rajeev Alur
+- Leslie Lamport
