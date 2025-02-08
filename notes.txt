@@ -3,20 +3,20 @@
 1	1010	Hayes		Fahrenberg
 2	1126	Maga		Erlich
 3	0115	Winskel		Laversa
-4	0305
+4	0320	Alur		Pommellet
+5	0428 - 0516
 
 # Potential talks
 
 - Paul Brunet
     * Specification algebras
-- A.Amrane, A.Pommellet
-    * Learning pomsets
 - A.Amrane, H.Bazille, U.Fahrenberg, P.Schlehuber
     * From Petri nets to HDAs
 
 # Potential invitees
 
-- Pascal Weil
 - Eugene Asarin
-- Rajeev Alur
-- Leslie Lamport
+- Cecilia Pradic (Weihrauch lattice with multiplication)
+- Thomas Henzinger (quantitative automata)
+- Kim Larsen
+- Sławek Lasota
