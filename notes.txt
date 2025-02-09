@@ -21,3 +21,4 @@
 - Kim Larsen
 - Sławek Lasota
 - Mellies / Zeilberger (categorical CFGs)
+- Gaëtan Staquet (automata with timers & learning)
