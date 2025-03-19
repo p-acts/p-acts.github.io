@@ -15,10 +15,12 @@
 
 # Potential invitees
 
-- Eugene Asarin
+- Eugene Asarin (mais attention Mo Foughali va faire un MeFo bientôt)
 - Cecilia Pradic (Weihrauch lattice with multiplication)
-- Thomas Henzinger (quantitative automata)
+- Thomas Henzinger: quantitative automata
 - Kim Larsen
 - Sławek Lasota
-- Mellies / Zeilberger (categorical CFGs)
+- Mellies / Zeilberger: categorical CFGs
 - Gaëtan Staquet (automata with timers & learning)
+- Anders Claesson (https://akc.is/): Combinatorial species, and how to count interval orders
+- Tarmo Uustalu: Concurrent monads, concurrent categories (https://doi.org/10.1145/3678232.3678249)
