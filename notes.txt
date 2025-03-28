@@ -1,10 +1,10 @@
 # Seminars
 
-1	1010	Hayes		Fahrenberg
-2	1126	Maga		Erlich
-3	0115	Winskel		Laversa
-4	0320	Alur		Pommellet
-5	0428 - 0516
+1	EPITA	1010	Hayes		Fahrenberg
+2	LIX	1126	Maga		Erlich
+3	IRIF	0115	Winskel		Laversa
+4	EPITA	0320	Alur		Pommellet
+5	LIX	0428 - 0516
 
 # Potential talks
 
@@ -15,7 +15,7 @@
 
 # Potential invitees
 
-- Eugene Asarin (mais attention Mo Foughali va faire un MeFo bientôt)
+- Eugene Asarin (mais attention Mo Foughali va faire un MeFo à l'IRIF bientôt)
 - Cecilia Pradic (Weihrauch lattice with multiplication)
 - Thomas Henzinger: quantitative automata
 - Kim Larsen
