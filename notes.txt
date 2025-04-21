@@ -24,3 +24,6 @@
 - Gaëtan Staquet (automata with timers & learning)
 - Anders Claesson (https://akc.is/): Combinatorial species, and how to count interval orders
 - Tarmo Uustalu: Concurrent monads, concurrent categories (https://doi.org/10.1145/3678232.3678249)
+- Barbara König: Graph Automata and Automata Functors (Dagstuhl 25141)
+- Sin'ya Ryoma: Measure-Theoretic Closure Operators for Regular Languages (Dagstuhl 25141)
+- Victor Iwaniack: Automata in W-Toposes and General Myhill-Nerode Theorems (Dagstuhl 25141)
