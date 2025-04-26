@@ -129,6 +129,51 @@
 	      Computation today is highly distributed and interactive.  Event structures represent computation in terms of causal dependency and conflict relations on events; the relations make precise the sense in which events can occur concurrently (independently, in parallel). By redeveloping games in sufficient generality, as event structures, interactive computation becomes a strategy and its type a game.  Then the dichotomy between a system and its environment is caught in the distinction between Player and Opponent moves.  A functional approach has to handle the dichotomy much more ingeniously, through its blunter distinction between input and output. This has led to a variety of functional approaches, specialised to particular interactive demands. A surprise in the development of concurrent games has been that several, seemingly disparate, historical approaches in logic and computation reappear as special cases.  They include stable domain theory; nondeterministic dataflow; geometry of interaction; the dialectica interpretation; lenses and optics; and their extensions to containers in dependent lenses and optics.
 	    </p>
           </article>
+
+          <article class="seminar-item">
+          <h3 class="seminar-date">Thursday 20 March 2025</h3>
+          <div class="upseminar-details">
+            <p><strong>Venue:</strong> LRE, EPITA Paris</p>
+            <p><strong>Speaker 1:</strong> (present) <em>Adrien Pommellet</em>, LRE</p>
+            <p><strong>Title:</strong> Active Learning Techniques for Pomset Recognizers </p>
+
+            <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+            <p class="abstract-content">
+              <span class="abstract-first-line">                   
+              </span> 
+              <span class="full-abstract" style="display:none;">
+	      Pomsets are a promising
+	      formalism for concurrent programs based on partially
+	      ordered sets. Among this class, series-parallel pomsets
+	      admit a convenient linear representation and can be
+	      recognized by simple algebraic structures known as
+	      pomset recognizers. Active learning consists in
+	      inferring a formal model of a recognizable language by
+	      asking membership and equivalence queries to a minimally
+	      adequate teacher (MAT). We improve existing learning
+	      algorithms for pomset recognizers by (1) introducing a
+	      new counter-example analysis procedure that is in the
+	      best case scenario exponentially more efficient than
+	      existing methods; (2) adapting the state-of-the-art
+	      L<sup>λ</sup> algorithm to minimize the impact of
+	      exceedingly verbose counter-examples and remove
+	      redundant queries; (3) designing a suitable finite test
+	      suite that ensures equivalence between two pomset
+	      recognizers provided their sizes are close enough by
+	      extending the well-known W-method.
+	    </p>
+            <p><strong>Speaker 2:</strong> (online) <em>Rajeev Alur</em>, University of Pennsylvania, US</p>
+            <p><strong>Title:</strong> Automata over Series-Parallel Graphs</p>
+
+            <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+            <p class="abstract-content">
+              <span class="abstract-first-line">                  
+              </span>
+              <span class="full-abstract" style="display:none;">
+	      Motivated by distributed data processing applications, we introduce a class of labeled directed acyclic graphs constructed using sequential and parallel composition operations, and study automata and logics over them. We show that deterministic and non-deterministic acceptors over such graphs have the same expressive power, which can be equivalently characterized by Monadic Second-Order logic and the graded &mu;-calculus. We establish closure under composition operations and decision procedures for membership, emptiness, and inclusion.<br />
+A key feature of our graphs, called synchronized series-parallel graphs (SSPG), is that parallel composition introduces a synchronization edge from the newly introduced source vertex to the sink. The transfer of information enabled by such edges is crucial to the determinization construction, which would not be possible for the traditional definition of series-parallel graphs. SSPGs allow both ordered ranked parallelism and unordered unranked parallelism. The latter feature means that in the corresponding automata, the transition function needs to account for an arbitrary number of predecessors by counting each type of state only up to a specified constant, thus leading to a notion of counting complexity that is distinct from the classical notion of state complexity. The determinization construction translates a nondeterministic automaton with <i>n</i> states and <i>k</i> counting complexity to a deterministic automaton with 2<sup><i>n</i><sup>2</sup></sup> states and <i>kn</i> counting complexity, and both these bounds are shown to be tight. Furthermore, for nondeterministic automata a bound of 2 on counting complexity suffices without loss of expressiveness.
+	    </p>
+          </article>
         </section>
         
     </main>        
