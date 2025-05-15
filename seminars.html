@@ -131,7 +131,7 @@
           </article>
 
           <article class="seminar-item">
-          <h3 class="seminar-date">Thursday 20 March 2025</h3>
+          <h3 class="seminar-date">20 March 2025</h3>
           <div class="upseminar-details">
             <p><strong>Venue:</strong> LRE, EPITA Paris</p>
             <p><strong>Speaker 1:</strong> (present) <em>Adrien Pommellet</em>, LRE</p>
@@ -173,6 +173,29 @@
 	      Motivated by distributed data processing applications, we introduce a class of labeled directed acyclic graphs constructed using sequential and parallel composition operations, and study automata and logics over them. We show that deterministic and non-deterministic acceptors over such graphs have the same expressive power, which can be equivalently characterized by Monadic Second-Order logic and the graded &mu;-calculus. We establish closure under composition operations and decision procedures for membership, emptiness, and inclusion.<br />
 A key feature of our graphs, called synchronized series-parallel graphs (SSPG), is that parallel composition introduces a synchronization edge from the newly introduced source vertex to the sink. The transfer of information enabled by such edges is crucial to the determinization construction, which would not be possible for the traditional definition of series-parallel graphs. SSPGs allow both ordered ranked parallelism and unordered unranked parallelism. The latter feature means that in the corresponding automata, the transition function needs to account for an arbitrary number of predecessors by counting each type of state only up to a specified constant, thus leading to a notion of counting complexity that is distinct from the classical notion of state complexity. The determinization construction translates a nondeterministic automaton with <i>n</i> states and <i>k</i> counting complexity to a deterministic automaton with 2<sup><i>n</i><sup>2</sup></sup> states and <i>kn</i> counting complexity, and both these bounds are shown to be tight. Furthermore, for nondeterministic automata a bound of 2 on counting complexity suffices without loss of expressiveness.
 	    </p>
+          </article>
+
+          <article class="seminar-item">
+          <h3 class="seminar-date">14 May 2025: Joint session with <a href="https://www-igm.univ-mlv.fr/~marsault/daal2025/">GT DAAL</a></h3>
+          <div class="upseminar-details">
+            <p><strong>Venue:</strong> LIGM, Marne-la-Vallée</p>
+            <p><strong>9:30</strong> <i>Barbara König</i> (online): Graph Automata and Automaton Functors</p>
+	    <p><strong>Abstract:</strong>
+We generalize Courcelle's recognizable graph languages and results on monadic second-order logic to more general structures.<br />
+We give a category-theoretical characterization of recognizability. A recognizable subset of arrows in a category is defined via a functor into the category of relations on finite sets. This can be seen as a straightforward generalization of finite automata and we show how to obtain graph automata - accepting recognizable graph languages - by applying the theory to the category of cospans of graphs.<br />
+We also introduce a simple logic that allows to quantify over the subobjects of a categorical object and we show that, for the category of graphs, this logic is equally expressive as monadic second-order graph logic (MSOGL). Furthermore, we explain that in the more general setting of hereditary pushout categories, a class of categories closely related to adhesive categories, we can recover Courcelle's result that every MSOGL-expressible property is recognizable.<br />
+The talk concludes by reviewing a practical implementation of graph automata with applications to the verification of graph transformation systems.
+	    </p>
+            <p><strong>10:30</strong> <i>Break</i></p>
+            <p><strong>11:00</strong> <i>Denis Kuperberg</i> (present): Explorable Automata</p>
+	    <p><strong>Abstract:</strong>
+We define the class of explorable automata on finite or infinite words. This is a generalization of History-Deterministic (HD) automata, where this time non-deterministic choices can be resolved by building finitely many simultaneous runs instead of just one.
+We show that recognizing HD parity automata of fixed index among explorable ones is in PTIME, thereby giving a strong link between the two notions. We then show that recognizing explorable automata is EXPTIME-complete, in the case of finite words or parity automata up to index [0,2]. Additionally, we define the notion of ω-explorable automata on infinite words, where countably many runs can be used to resolve the non-deterministic choices. We show EXPTIME-completeness for ω-explorability of automata on infinite words for the safety and co-Büchi acceptance conditions.<br />
+We finally characterize the expressivity of (ω-)explorable automata with respect to the parity index hierarchy.
+We leave open the decidability of explorability for [1,3]-automata and ω- explorability for Büchi automata, both equivalent to the general case of arbitrary acceptance conditions.<br />
+This is joint work with Emile Hazard and Olivier Idir (short version CSL 2023, long version submitted to LMCS). 
+	    </p>
+          </div>
           </article>
         </section>
         
