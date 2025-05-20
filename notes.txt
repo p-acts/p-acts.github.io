@@ -4,8 +4,9 @@
 2	LIX	1126	Maga		Erlich
 3	IRIF	0115	Winskel		Laversa
 4	EPITA	0320	Alur		Pommellet
-5	LIGM	0515
+5	LIGM	0515	König		Kuperberg
 6	LIX	0616 - 0704
+
 
 # Potential talks
 
@@ -27,3 +28,4 @@
 - Tarmo Uustalu: Concurrent monads, concurrent categories (https://doi.org/10.1145/3678232.3678249)
 - Sin'ya Ryoma: Measure-Theoretic Closure Operators for Regular Languages (Dagstuhl 25141)
 - Victor Iwaniack: Automata in W-Toposes and General Myhill-Nerode Theorems (Dagstuhl 25141)
+- Ben Bisping: Deciding All Behavioral Equivalences at Once
