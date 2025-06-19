@@ -1,11 +1,12 @@
 # Seminars
 
-1	EPITA	1010	Hayes		Fahrenberg
-2	LIX	1126	Maga		Erlich
-3	IRIF	0115	Winskel		Laversa
-4	EPITA	0320	Alur		Pommellet
-5	LIGM	0515	König		Kuperberg
-6	LIX	0616 - 0704
+1	EPITA	20241010	Hayes		Fahrenberg
+2	LIX	20241126	Maga		Erlich
+3	IRIF	20250115	Winskel		Laversa
+4	EPITA	20250320	Alur		Pommellet
+5	LIGM	20250515	König		Kuperberg
+6	LIX	20250618	Zeilberger	Bisping
+7	IRIF	202509
 
 
 # Potential talks
@@ -17,15 +18,12 @@
 
 # Potential invitees
 
-- Eugene Asarin (mais attention Mo Foughali va faire un MeFo à l'IRIF bientôt)
+- Eugene Asarin
 - Cecilia Pradic (Weihrauch lattice with multiplication)
 - Thomas Henzinger: quantitative automata
 - Kim Larsen
-- Sławek Lasota
-- Mellies / Zeilberger: categorical CFGs
 - Gaëtan Staquet (automata with timers & learning)
 - Anders Claesson (https://akc.is/): Combinatorial species, and how to count interval orders
 - Tarmo Uustalu: Concurrent monads, concurrent categories (https://doi.org/10.1145/3678232.3678249)
 - Sin'ya Ryoma: Measure-Theoretic Closure Operators for Regular Languages (Dagstuhl 25141)
 - Victor Iwaniack: Automata in W-Toposes and General Myhill-Nerode Theorems (Dagstuhl 25141)
-- Ben Bisping: Deciding All Behavioral Equivalences at Once
