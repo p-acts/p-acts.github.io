@@ -6,15 +6,13 @@
 4	EPITA	20250320	Alur		Pommellet
 5	LIGM	20250515	König		Kuperberg
 6	LIX	20250618	Zeilberger	Bisping
-7	IRIF	202509
+7	IRIF	20250910	Ziemiański	Rajsbaum
+8	EPITA
 
 
 # Potential talks
 
-- Paul Brunet
-    * Specification algebras
-- A.Amrane, H.Bazille, U.Fahrenberg, P.Schlehuber
-    * From Petri nets to HDAs
+- Stefan Haar: Continuous Petri nets
 
 # Potential invitees
 
