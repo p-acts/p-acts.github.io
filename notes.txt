@@ -1,20 +1,19 @@
 # Seminars
 
  1	EPITA	20241010	Hayes		Fahrenberg
- 2	LIX	20241126	Maga		Erlich
+ 2	LIX	20241126	Waga		Erlich
  3	IRIF	20250115	Winskel		Laversa
  4	EPITA	20250320	Alur		Pommellet
  5	LIGM	20250515	König		Kuperberg
  6	LIX	20250618	Zeilberger	Bisping
  7	IRIF	20250910	Ziemiański	Rajsbaum
  8	LACL	20251105	Busatto-Gaston	Haar
- 9	EPITA/TSP	202601
-
+ 9	EPITA	20260108	Chamoun		Abbes
+10	TSP	20260219	Bellier		Gabbay
 
 # Potential locals
 
 - Eugene Asarin
-- Samy Abbes: probabilistic concurrent systems
 
 # Potential invitees
 
