@@ -98,7 +98,19 @@
 		<span class="abstract-first-line">                   
 		</span> 
 		<span class="full-abstract" style="display:none;">
-		  TBA
+Distributed algorithms are notoriously difficult to design, understand, and prove correct.  Most distributed protocols (e.g. broadcast or consensus) are in practice specified in pseudocode, and verified in informal reasoning or using a linear temporal logic.  This means that the underlying programming paradigm is imperative, and therefore proofs tend to be relatively involved, detailed and complicated, as one would expect for verifying an imperative process.<br />
+
+I've developed a declarative axiomatic approach based on three-valued modal logic and semitopologies.  Operational details (including details of message-passing and their ordering) are elided.  The result feels much more high level, akin to declarative programming.  Specifications and correctness proofs come out correspondingly simpler and can mostly proceed by compact and precise abstract symbol-pushing.<br />
+
+This approach has been battle-tested on textbook algorithms and on industrial protocols, *and* it has been successfully used to locate and correct defects in real-life industrial protocols (and indeed, in my case, to understand them!). I will give an overview of the basic ideas and principles.
+
+The interested reader can find out more here:
+<ul>
+<li><a href="https://doi.org/10.1093/logcom/exae050">https://doi.org/10.1093/logcom/exae050</a> (semitopologies)</li>
+<li><a href="https://arxiv.org/pdf/2502.00892">https://arxiv.org/pdf/2502.00892</a> (declarative Paxos)</li>
+<li><a href="https://arxiv.org/pdf/2512.21137">https://arxiv.org/pdf/2512.21137</a> (declarative Bracha broadcast)</li>
+<li><a href="https://www.amazon.co.uk/Semitopology-Decentralised-Collaborative-Topology-Algebra/dp/1848904657">semitopology book</a></li>
+</il>
 		</span>
 	      </p>
 
