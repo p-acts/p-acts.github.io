@@ -375,6 +375,48 @@ we explain that our work has applications in the semantics of concurrency theory
             </div>
           </article>
 
+          <article class="seminar-item">
+            <h3 class="seminar-date">19 February 2026</h3>
+            <div class="upseminar-details">
+              <p><strong>Venue:</strong> Institut Mines-Télécom, Palaiseau, <i>salle 4A485</i></p>
+              <p><strong>Speaker 1:</strong> (present) <em>Dylan Bellier</em>, Télécom SudParis</p>
+              <p><strong>Title:</strong> Plan Logic and "efficient" strategic reasoning</p>
+	      
+              <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+              <p class="abstract-content">
+		<span class="abstract-first-line">                   
+		</span> 
+		<span class="full-abstract" style="display:none;">
+When reasoning about games, one is often interested in verifying more intricate strategic properties than the mere existence of a winning strategy for a given coalition. Several languages, among which the very expressive Strategy Logic (SL), have been proposed that explicitly quantify over strategies in order to express and verify such properties. However, quantifying over strategies poses serious issues: not only does this lead to a non-elementary model-checking problem, but the classic Tarskian semantics is not fully adequate, both from a conceptual and practical viewpoint, since it does not guarantee the realisability of the strategies involved.<br />
+In this presentation, I present a different approach and introduce Plan Logic (PL), a logic that takes plans, i.e., sequences of actions, as first-class citizens instead of strategies. Since plans are much simpler objects than strategies, it becomes easier to enforce realisability. In this setting, we can recover strategic reasoning by means of a compositional hyperteams semantics, inspired by the well-known team semantics. We show that the Conjunctive-Goal and Disjunctive-Goal fragments of SL are captured by PL, with an effective polynomial translation. This result relies on the definition of a suitable game-theoretic semantics for the two fragments.
+		</span>
+	      </p>
+	      
+              <p><strong>Speaker 2:</strong> (online) <em>Jamie Gabbay</em>, Heriot-Watt University, Edinburgh</p>
+              <p><strong>Title:</strong> Declarative distributed broadcast using three-valued modal logic and semitopologies</p>
+
+              <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+              <p class="abstract-content">
+		<span class="abstract-first-line">                   
+		</span> 
+		<span class="full-abstract" style="display:none;">
+Distributed algorithms are notoriously difficult to design, understand, and prove correct.  Most distributed protocols (e.g. broadcast or consensus) are in practice specified in pseudocode, and verified in informal reasoning or using a linear temporal logic.  This means that the underlying programming paradigm is imperative, and therefore proofs tend to be relatively involved, detailed and complicated, as one would expect for verifying an imperative process.<br />
+
+I've developed a declarative axiomatic approach based on three-valued modal logic and semitopologies.  Operational details (including details of message-passing and their ordering) are elided.  The result feels much more high level, akin to declarative programming.  Specifications and correctness proofs come out correspondingly simpler and can mostly proceed by compact and precise abstract symbol-pushing.<br />
+
+This approach has been battle-tested on textbook algorithms and on industrial protocols, <i>and</i> it has been successfully used to locate and correct defects in real-life industrial protocols (and indeed, in my case, to understand them!). I will give an overview of the basic ideas and principles.
+
+The interested reader can find out more here:<br />
+<a href="https://doi.org/10.1093/logcom/exae050">https://doi.org/10.1093/logcom/exae050</a> (semitopologies)<br />
+<a href="https://arxiv.org/pdf/2502.00892">https://arxiv.org/pdf/2502.00892</a> (declarative Paxos)<br />
+<a href="https://arxiv.org/pdf/2512.21137">https://arxiv.org/pdf/2512.21137</a> (declarative Bracha broadcast)<br />
+<a href="https://www.amazon.co.uk/Semitopology-Decentralised-Collaborative-Topology-Algebra/dp/1848904657">semitopology book</a><br />
+		</span>
+	      </p>
+
+	    </div>
+          </article>
+
         </section>
         
     </main>        
