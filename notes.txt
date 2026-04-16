@@ -12,7 +12,9 @@
 10	TSP	20260219	Bellier		Gabbay
 11	LIX	20260415	Reghem		Lenke
 
-12		30/3 - 17/4
+12		26/5 - 12/6
+
+13
 
 # Potential locals
 
