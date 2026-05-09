@@ -11,8 +11,7 @@
  9	EPITA	20260108	Chamoun		Abbes
 10	TSP	20260219	Bellier		Gabbay
 11	LIX	20260415	Reghem		Lenke
-
-12		26/5 - 12/6
+12	LACL	20260528
 
 13
 
