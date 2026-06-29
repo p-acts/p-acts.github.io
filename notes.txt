@@ -11,20 +11,17 @@
  9	EPITA	20260108	Chamoun		Abbes
 10	TSP	20260219	Bellier		Gabbay
 11	LIX	20260415	Reghem		Lenke
-12	LACL	20260528
-
-13
+12	LACL	20260528	Wolff		Faustino
+13	LRE	20260703	Foughali	Kuske
+14	LMF	20260918	Bouyer
 
 # Potential locals
 
-- Eugene Asarin: distances on timed words
-- Patricia Bouyer: Model-Checking Real-Time Systems: Revisiting the Alternating Automaton Route https://arxiv.org/abs/2501.17576
 - Hugo Paquet
 - Gregory Faraut
 
 # Potential invitees
 
-- Caterina Faustino (recently finished her PhD with Thomas Kahl)
 - Cecilia Pradic: Weihrauch lattice with multiplication
 - Thomas Henzinger: quantitative automata
 - Kim Larsen
