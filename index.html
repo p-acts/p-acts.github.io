@@ -1,136 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paris ACTS</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <h1>Paris Automata and Concurrency Theory Seminar</h1>
-      <h2>(Paris ACTS)</h2>
-    </header>
-    
-    <nav>
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="seminars.html" class="nav-link">Past Seminars</a>
-      <a href="committee.html" class="nav-link">Committees</a>
-      <!--<a href="members.html" class="nav-link">Members</a> -->
-      <a href="local-info.html" class="nav-link active">Local Information</a>
-    </nav>
-    <div class="wrapper">
-      <section id="about">
-        <h2>About Paris ACTS</h2>
 
-        <p>
-          Paris ACTS has been created to reinforce the links between different research groups in the Paris area
-          which are working on the connections between automata theory and concurrency theory,
-          and in order to advance this research on a national and international level,
-        </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paris ACTS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-        <p>
-          The seminar takes place every six to eight weeks, moving between 
-          <a href="https://www.lix.polytechnique.fr/">LIX</a> (École Polytechnique), 
-          <a href="https://www.lre.epita.fr/">LRE</a> (EPITA Paris),
-          <a href="https://www.irif.fr/">IRIF</a> (Université Paris Cité),
-	  <a href="https://lmf.cnrs.fr/">LMF</a> (Université Paris-Saclay),
-	  <a href="https://samovar.telecom-sudparis.eu/">SAMOVAR</a> (Télécom SudParis), and
-	  <a href="https://www.lacl.fr/">LACL</a> (Université Paris Est Créteil).
-          It is held in hybrid mode and has a slight thematic overlap with the <em><a href="https://mefosyloma.fr/">MeFoSyLoMa</a></em> seminar.
-        </p>
+<body>
+  <header>
+    <h1>Paris Automata and Concurrency Theory Seminar</h1>
+    <h2>(Paris ACTS)</h2>
+  </header>
 
-	<p>
-	  The seminar has a low-traffic mailing list for announcements etc.
-	  If you want to join, send an email to <a href="mailto:p-acts-owner@ml.lre.epita.fr">p-acts-owner@ml.lre.epita.fr</a>.
-	</p>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="seminars.html" class="nav-link">Past Seminars</a>
+    <a href="committee.html" class="nav-link">Committees</a>
+    <!--<a href="members.html" class="nav-link">Members</a> -->
+    <a href="local-info.html" class="nav-link active">Local Information</a>
+  </nav>
+  <div class="wrapper">
+    <section id="about">
+      <h2>About Paris ACTS</h2>
 
-        <p>
-          The general program for each seminar is as follows:
-          <table>
-            <tbody>
-              <tr>
-                <td>14:00--14:45</td>
-                <td>In-person talk</td>
-              </tr>
-              <tr>
-                <td>14:45--15:30</td>
-                <td>Online or in-person talk</td>
-              </tr>
-              <tr>
-                <td>15:30--16:00</td>
-                <td>Break</td>
-              </tr>
-              <tr>
-                <td>16:00--17:00</td>
-                <td>Discussion</td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
+      <p>
+        Paris ACTS has been created to reinforce the links between different research groups in the Paris area
+        which are working on the connections between automata theory and concurrency theory,
+        and in order to advance this research on a national and international level,
+      </p>
 
-        <h2>Next Seminar</h2>
-	
-          <article class="seminar-item">
-            <h3 class="seminar-date">3 July 2026</h3>
-            <div class="upseminar-details">
-              <p><strong>Venue:</strong> LRE, EPITA Paris</p>
-              <p><strong>Speaker 1:</strong> (present) <i>Mo Foughali</i>, IRIF</p>
-	      <p><strong>Title:</strong> A Theory of Linear-Time Timed Monitors</p>
-              <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
-              <p class="abstract-content">
-		<span class="abstract-first-line">                   
-		</span> 
-		<span class="full-abstract" style="display:none;">
-In runtime verification (RV), a logical formula φ, formalising some property of interest, is typically translated into a monitor that checks whether the system under scrutiny satisfies φduring its execution. Monitorability is a central issue in RV that remained unsolved for timed logics, i.e., where formulae can express both the order of events and the quantity of time separating them.<br />
+      <p>
+        The seminar takes place every six to eight weeks, moving between
+        <a href="https://www.lix.polytechnique.fr/">LIX</a> (École Polytechnique),
+        <a href="https://www.lre.epita.fr/">LRE</a> (EPITA Paris),
+        <a href="https://www.irif.fr/">IRIF</a> (Université Paris Cité),
+        <a href="https://lmf.cnrs.fr/">LMF</a> (Université Paris-Saclay),
+        <a href="https://samovar.telecom-sudparis.eu/">SAMOVAR</a> (Télécom SudParis), and
+        <a href="https://www.lacl.fr/">LACL</a> (Université Paris Est Créteil).
+        It is held in hybrid mode and has a slight thematic overlap with the <em><a
+            href="https://mefosyloma.fr/">MeFoSyLoMa</a></em> seminar.
+      </p>
 
-The challenge is to precisely characterise, given some expressive timed logic T interpreted over infinite timed executions, its largest subset of monitorable formulae. Intuitively, a formula φ is monitorable iff there exists a monitor M that is sound and (violation or satisfaction) complete for φ.<br />
-- Soundness requires that whenever M reaches a violation (resp. satisfaction) verdict after observing a finite execution ρ, then any infinite extension of ρviolates (resp. satisfies) φ.<br />
-- Violation completeness states that for any infinite execution π violating φ, M will inevitably reach a violation verdict after observing a finite prefix of π(satisfaction completeness is defined dually).<br />
+      <p>
+        The seminar has a low-traffic mailing list for announcements etc.
+        If you want to join, send an email to <a
+          href="mailto:p-acts-owner@ml.lre.epita.fr">p-acts-owner@ml.lre.epita.fr</a>.
+      </p>
 
-The main difficulty underlying the monitorability problem is, therefore, to formally characterise when one can <i>“tell the future based on the present.”</i><br />
+      <p>
+        The general program for each seminar is as follows:
+      <table>
+        <tbody>
+          <tr>
+            <td>14:00--14:45</td>
+            <td>In-person talk</td>
+          </tr>
+          <tr>
+            <td>14:45--15:30</td>
+            <td>Online or in-person talk</td>
+          </tr>
+          <tr>
+            <td>15:30--16:00</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>16:00--17:00</td>
+            <td>Discussion</td>
+          </tr>
+        </tbody>
+      </table>
+      </p>
 
-In this talk, I will go over our recent work that solved the monitorability problem for Tˡⁱⁿ, a new expressive (linear-time) timed μ-calculus that we proposed.<br />
-- First, we show that Tˡⁱⁿ is strictly more expressive than MTL, the de facto timed extension of the well-known LTL.<br />
-- Second, we identify MTˡⁱⁿ, the largest monitorable fragment of Tˡⁱⁿ modulo a rich monitoring framework that we devise; and further characterise its largest subsets of formulae that are <i>violation monitorable</i>, <i>satisfaction monitorable</i>, and <i>complete monitorable</i> (both satisfaction and violation monitorable).<br />
-Our theoretical results are accompanied with compilers: - (i) from MTL to Tˡⁱⁿ, and - (ii) from Tˡⁱⁿ formulae to monitors.
-		</span>
-	      </p>
+      <h2>Next Seminar</h2>
 
-              <p><strong>Speaker 2:</strong> (present) <i>Dietrich Kuske</i>, TU Ilmenau, Germany</p>
-	    </div>
-          </article>
+      <article class="seminar-item">
+        <h3 class="seminar-date">3 July 2026</h3>
+        <div class="upseminar-details">
+          <p><strong>Venue:</strong> LRE, EPITA Paris</p>
+          <p><strong>Speaker 1:</strong> (present) <i>Mo Foughali</i>, IRIF</p>
+          <p><strong>Title:</strong> A Theory of Linear-Time Timed Monitors</p>
+          <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+          <p class="abstract-content">
+            <span class="abstract-first-line">
+            </span>
+            <span class="full-abstract" style="display:none;">
+              In runtime verification (RV), a logical formula φ, formalising some property of interest, is typically
+              translated into a monitor that checks whether the system under scrutiny satisfies φduring its execution.
+              Monitorability is a central issue in RV that remained unsolved for timed logics, i.e., where formulae can
+              express both the order of events and the quantity of time separating them.<br />
 
-	<h2>Contact</h2>
-	<p>
-	  The organisers can be reached at
-	  <b><a href="mailto:p-acts-owner@ml.lre.epita.fr">p-acts-owner@ml.lre.epita.fr</a></b>.
-	</p>
+              The challenge is to precisely characterise, given some expressive timed logic T interpreted over infinite
+              timed executions, its largest subset of monitorable formulae. Intuitively, a formula φ is monitorable iff
+              there exists a monitor M that is sound and (violation or satisfaction) complete for φ.<br />
+              - Soundness requires that whenever M reaches a violation (resp. satisfaction) verdict after observing a
+              finite execution ρ, then any infinite extension of ρviolates (resp. satisfies) φ.<br />
+              - Violation completeness states that for any infinite execution π violating φ, M will inevitably reach a
+              violation verdict after observing a finite prefix of π(satisfaction completeness is defined dually).<br />
+
+              The main difficulty underlying the monitorability problem is, therefore, to formally characterise when one
+              can <i>“tell the future based on the present.”</i><br />
+
+              In this talk, I will go over our recent work that solved the monitorability problem for Tˡⁱⁿ, a new
+              expressive (linear-time) timed μ-calculus that we proposed.<br />
+              - First, we show that Tˡⁱⁿ is strictly more expressive than MTL, the de facto timed extension of the
+              well-known LTL.<br />
+              - Second, we identify MTˡⁱⁿ, the largest monitorable fragment of Tˡⁱⁿ modulo a rich monitoring framework
+              that we devise; and further characterise its largest subsets of formulae that are <i>violation
+                monitorable</i>, <i>satisfaction monitorable</i>, and <i>complete monitorable</i> (both satisfaction and
+              violation monitorable).<br />
+              Our theoretical results are accompanied with compilers: - (i) from MTL to Tˡⁱⁿ, and - (ii) from Tˡⁱⁿ
+              formulae to monitors.
+            </span>
+          </p>
+
+          <p><strong>Speaker 2:</strong> (present) <i>Dietrich Kuske</i>, TU Ilmenau, Germany</p>
+          <p><strong>Title:</strong> Decision problems for infinite Mazurkiewicz traces</p>
+          <span class="toggle-abstract" style="cursor: pointer;">► <strong>Abstract:</strong></span>
+          <p class="abstract-content">
+            <span class="abstract-first-line">
+            </span>
+            <span class="full-abstract" style="display:none;">
+              This talk studies decision problems for Boolean combinations of
+              omega-rational languages of Mazurkiewicz traces. The complexities of
+              these decision problems (emptiness, regularity, rationality) are
+              classified depending on properties of the independence alphabets and
+              of the Boolean combinations allowed. For any of the problems, we
+              obtain a trichotomy ranging from decidable over a low level of the
+              arithmetical hierarchy to a low level of the analytical hierarchy.
+            </span>
+          </p>
+        </div>
+      </article>
+
+      <h2>Contact</h2>
+      <p>
+        The organisers can be reached at
+        <b><a href="mailto:p-acts-owner@ml.lre.epita.fr">p-acts-owner@ml.lre.epita.fr</a></b>.
+      </p>
     </section>
     <script src="script.js"></script>
+  </div>
+  <footer>
+    <p>&copy; 2024 Paris Automata and Concurrency Theory Seminar (Paris ACTS)</p>
+    <div class="footer-logos">
+      <a href="https://www.irif.fr/" target="_blank">
+        <img src="irif-logo.png" alt="IRIF Logo">
+      </a>
+      <a href="https://www.lix.polytechnique.fr/" target="_blank">
+        <img src="lix-logo.png" alt="LIX Logo">
+      </a>
+      <a href="https://www.lre.epita.fr/" target="_blank">
+        <img src="lre-logo.png" alt="LRE Logo">
+      </a>
+      <a href="https://samovar.telecom-sudparis.eu/" target="_blank">
+        <img src="smv-logo.png" alt="SMV Logo">
+      </a>
+      <a href="https://www.lacl.fr/" target="_blank">
+        <img src="lacl-logo.png" alt="LACL Logo">
+      </a>
+      <a href="https://ens-paris-saclay.fr/recherche/laboratoires-et-instituts/laboratoire-methodes-formelles-lmf/"
+        target="_blank">
+        <img src="lmf-logo.png" alt="LMF Logo">
+      </a>
     </div>
-    <footer>
-		<p>&copy; 2024 Paris Automata and Concurrency Theory Seminar (Paris ACTS)</p>
-		<div class="footer-logos">
-		<a href="https://www.irif.fr/" target="_blank">
-		    <img src="irif-logo.png" alt="IRIF Logo">
-		</a>
-		<a href="https://www.lix.polytechnique.fr/" target="_blank">
-		    <img src="lix-logo.png" alt="LIX Logo">
-		</a>
-		<a href="https://www.lre.epita.fr/" target="_blank">
-		    <img src="lre-logo.png" alt="LRE Logo">
-		</a>
-		<a href="https://samovar.telecom-sudparis.eu/" target="_blank">
-		    <img src="smv-logo.png" alt="SMV Logo">
-		</a>
-		<a href="https://www.lacl.fr/" target="_blank">
-		    <img src="lacl-logo.png" alt="LACL Logo">
-		</a>
-		<a href="https://ens-paris-saclay.fr/recherche/laboratoires-et-instituts/laboratoire-methodes-formelles-lmf/" target="_blank">
-		    <img src="lmf-logo.png" alt="LMF Logo">
-		</a>
-		</div>
-	</footer>
-  </body>
+  </footer>
+</body>
+
 </html>
